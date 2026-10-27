@@ -53,8 +53,8 @@ the extension; all other data is packaged.
 ## Calendars
 - **Gregorian and Julian:** proleptic, with exact integer arithmetic, from 999,999 BCE to
   999,999 CE.
-  - Years are shown historically (no year zero).
-  - Internally CalAstro uses astronomical numbering (1 BCE = 0, 2 BCE = −1).
+  - Years are shown and entered as in each calendar, with no year zero: 1 BCE is followed by
+    1 CE, and 1 BH by 1 AH (or 1 SH).
   - Julian calendar dates are different from Julian Day Numbers.
 - **Solar Hijri (astronomical):**
   - The year starts on the day of the March equinox if the equinox occurs before true

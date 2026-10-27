@@ -19,11 +19,13 @@
 On **Convert**:
 1. Choose the calendar you are converting from.
 2. Enter the day, month and year. For Gregorian, Julian and tabular Islamic, choose the era:
-   CE or BCE, AH or BH. Years have no zero, so 1 BCE is followed by 1 CE. BCE results also show
-   the astronomical year number (1 BCE = year 0).
+   CE or BCE, AH or BH. Years are counted as in the calendars themselves, with no year zero: 1 BCE is
+   followed by 1 CE, and 1 BH by 1 AH.
 3. Press **Convert**.
 
-The same day is shown in every calendar, with its weekday and Julian Day Number. Each result
+The same day is shown in every calendar, each with its weekday in that calendar's own names
+(for example Yekshanbeh in Solar Hijri, al-Ahad in Islamic, Sunday in Gregorian), and with its
+Julian Day Number. Each result
 has a copy button.
 - A **±1** badge on a Solar Hijri date means the year boundary is too close to call (see the
   [methods](methods.md)).

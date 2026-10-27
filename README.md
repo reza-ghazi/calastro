@@ -50,7 +50,9 @@ announcements**. Displayed times are rounded to the minute. Real atmospheric ref
 change sunrise and sunset by more than that.
 
 ## Supported range
-- **Arithmetic calendars:** 1–9999 CE.
+- **Gregorian, Julian and tabular Islamic:** 999,999 BCE to 999,999 CE, including years before
+  the Hijra (BH). These calendars are arithmetic, so they are proleptic before their historical
+  introduction.
 - **Sun, Moon and prayer times:** 1550–2649 CE.
 - **Astronomical Solar Hijri:** 929–2027 SH.
 

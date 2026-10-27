@@ -43,8 +43,11 @@ CalAstro computes everything on your device from data packaged with the extensio
 - **Lunar age:** time since the last geocentric conjunction in ecliptic longitude.
 
 ## Calendars
-- **Gregorian and Julian:** proleptic, with exact integer arithmetic. Julian calendar dates
-  are different from Julian Day Numbers.
+- **Gregorian and Julian:** proleptic, with exact integer arithmetic, from 999,999 BCE to
+  999,999 CE.
+  - Years are shown historically (no year zero).
+  - Internally CalAstro uses astronomical numbering (1 BCE = 0, 2 BCE = −1).
+  - Julian calendar dates are different from Julian Day Numbers.
 - **Solar Hijri (astronomical):**
   - The year starts on the day of the March equinox if the equinox occurs before true
     (apparent) solar noon on the 52.5°E meridian; otherwise it starts on the next day. This is
@@ -56,8 +59,9 @@ CalAstro computes everything on your device from data packaged with the extensio
 - **Shahanshahi (Imperial):** Solar Hijri months and days with year + 1180, in official use
   from 1355 to 1357 SH.
 - **Tabular Islamic:** 30-year cycles of van Gent's types I–IV, with the Friday (civil) or
-  Thursday (astronomical) epoch of 1 Muharram AH 1. Days are counted from midnight; the
-  religious day begins at sunset.
+  Thursday (astronomical) epoch of 1 Muharram AH 1.
+  - Years before AH 1 are counted BH (before Hijra), proleptically.
+  - Days are counted from midnight; the religious day begins at sunset.
 - **Predicted Islamic:**
   - **Umm al-Qura rule (default):** at Makkah on the 29th, if the conjunction precedes sunset
     and the Moon sets after the Sun, the next day begins the month.

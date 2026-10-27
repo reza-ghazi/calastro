@@ -15,7 +15,9 @@
 ## Converting dates
 On **Convert**:
 1. Choose the calendar you are converting from.
-2. Enter the day, month and year.
+2. Enter the day, month and year. For Gregorian, Julian and tabular Islamic, choose the era:
+   CE or BCE, AH or BH. Years have no zero, so 1 BCE is followed by 1 CE. BCE results also show
+   the astronomical year number (1 BCE = year 0).
 3. Press **Convert**.
 
 The same day is shown in every calendar, with its weekday and Julian Day Number. Each result

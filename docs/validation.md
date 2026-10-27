@@ -5,7 +5,8 @@ maximum differences measured.
 
 | Area | Reference | Sample | Result |
 |---|---|---|---|
-| Ephemeris reader | NASA NAIF CSPICE on the full DE442 kernel | 720 epochs × 4 bodies, incl. segment boundaries | 3 × 10⁻⁸ km |
+| Ephemeris reader | NASA NAIF CSPICE on the full DE442 and DE441 kernels | 1117 epochs × 4 bodies, 10 BCE – 3007 CE, incl. record, chunk and hand-over boundaries | 3 × 10⁻⁸ km |
+| Far-from-present apparent places | JPL Horizons (DE441), geocentric, TT | 8 epochs 1 CE – 3000 CE | Sun–Moon separation within 0.4 mas; absolute RA/Dec within 3.5″ (Horizons' IAU 1976/80 equinox frame) |
 | Topocentric Sun and Moon az/el | CSPICE `azlcpo`, ITRF93 high-precision Earth orientation | 1000 epochs, 4 sites, 1985–2026 | 0.009″ |
 | Leap seconds (TAI−UTC) | IAU SOFA `eraDat` | 1961–2029 | exact |
 | TDB−TT | IAU SOFA `eraDtdb` | 1550–2650 | 7.8 µs |

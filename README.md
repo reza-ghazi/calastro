@@ -4,7 +4,7 @@
 
 CalAstro is a free Chrome extension that converts dates between calendars and shows the day's
 Sun and Moon events and prayer times for any place. Every calculation runs on your device,
-from the original JPL DE442 ephemeris packaged with the extension.
+from the original JPL DE442 and DE441 ephemerides packaged with the extension.
 
 > Chrome Web Store: _link added at publication_ · Website: https://reza-ghazi.github.io/calastro/
 
@@ -53,8 +53,10 @@ change sunrise and sunset by more than that.
 - **Gregorian, Julian and tabular Islamic:** 999,999 BCE to 999,999 CE, including years before
   the Hijra (BH). These calendars are arithmetic, so they are proleptic before their historical
   introduction.
-- **Sun, Moon and prayer times:** 1550–2649 CE.
-- **Astronomical Solar Hijri:** 929–2027 SH.
+- **Sun, Moon, prayer times and predicted Islamic months:** 1 CE – 3000 CE. Far from the
+  present, clock times inherit Earth-rotation uncertainty (about ±4 min at 1 CE and ±30 min at
+  3000 CE); CalAstro shows it.
+- **Astronomical Solar Hijri:** 622 BH – 2379 SH (1 CE – 3000 CE).
 
 ## Documentation
 - [User guide](docs/user-guide.md)

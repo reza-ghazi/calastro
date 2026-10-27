@@ -3,8 +3,14 @@
 CalAstro computes everything on your device from data packaged with the extension.
 
 ## Ephemeris and reference frames
-- **Positions:** JPL DE442, original Chebyshev coefficients for the Sun, the Earth–Moon
-  barycentre, the Moon and the Earth. Valid from 1549-12-31 to 2650-01-25.
+- **Positions:** original Chebyshev coefficients for the Sun, the Earth–Moon barycentre, the
+  Moon and the Earth.
+  - JPL DE442 from 1549-12-31 to 2650-01-25; JPL DE441 for other years.
+  - The bundled data spans about 10 BCE – 3007 CE; the features cover 1 CE – 3000 CE.
+  - At the two hand-overs the Moon steps by at most 0.38″ (DE441 vs DE442).
+- **Far-from-present dates:** positions stay accurate (DE441), but local clock times inherit
+  the uncertainty of Earth's rotation (ΔT), about ±4 min at 1 CE and ±30 min at 3000 CE (1σ).
+  CalAstro shows a note when this exceeds a minute.
 - **Apparent places:**
   - light time;
   - solar gravitational light deflection (not applied to the Sun itself);

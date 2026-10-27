@@ -13,6 +13,7 @@ First public release.
 - Prayer times: 18 source-documented methods and the WGS84 Qibla bearing.
 - English and Persian with right-to-left layout and a choice of numerals; light and dark
   themes.
+- Convert has a **Today** button that resets the form to today's date.
 - Every date shows its weekday in the calendar's own names (e.g. Yekshanbeh for Solar Hijri,
   al-Ahad for Islamic); years are calendrical, with no year zero (1 BCE is followed by 1 CE).
 - JPL DE442/DE441 ephemeris for 1 CE – 3000 CE, downloaded once on first use (about 223 MB,

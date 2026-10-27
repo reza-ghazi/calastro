@@ -21,7 +21,7 @@ On **Convert**:
 2. Enter the day, month and year. For Gregorian, Julian and tabular Islamic, choose the era:
    CE or BCE, AH or BH. Years are counted as in the calendars themselves, with no year zero: 1 BCE is
    followed by 1 CE, and 1 BH by 1 AH.
-3. Press **Convert**.
+3. Press **Convert**. **Today** resets the form to today's date in the selected calendar.
 
 The same day is shown in every calendar, each with its weekday in that calendar's own names
 (for example Yekshanbeh in Solar Hijri, al-Ahad in Islamic, Sunday in Gregorian), and with its

@@ -5,6 +5,9 @@
    - today's date in your chosen calendars;
    - the Sun's times and the next event;
    - the Moon's phase.
+   On first use, CalAstro downloads its astronomical data once (about 223 MB) and shows the
+   progress. Gregorian, Julian and tabular Islamic dates work at once; Sun, Moon and the
+   astronomical calendars appear when the download finishes. After that, CalAstro works offline.
 2. Click **Open CalAstro** for the full page. It has five tabs: **Today**, **Convert**,
    **Sun & Moon**, **Prayer times** and **Settings & methods**.
 3. In **Settings & methods**, set your location in any of three ways:

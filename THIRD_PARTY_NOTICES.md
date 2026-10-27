@@ -1,7 +1,9 @@
 # Third-party data and notices
 
 CalAstro's runtime code is original or derived from the owner's Astrolibs library. It contains
-no third-party runtime code. The extension bundles the following third-party **data**:
+no third-party runtime code. The extension uses the following third-party **data**. The JPL
+ephemeris files are downloaded once on first run from the project's website (D-016); the rest
+is packaged:
 
 | Data | Source | Terms | Use in CalAstro |
 |---|---|---|---|

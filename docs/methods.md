@@ -1,6 +1,8 @@
 # Methods
 
-CalAstro computes everything on your device from data packaged with the extension.
+CalAstro computes everything on your device. The JPL ephemeris data (about 223 MB) is downloaded
+once on first use from this project's website and checked against SHA-256 checksums packaged with
+the extension; all other data is packaged.
 
 ## Ephemeris and reference frames
 - **Positions:** original Chebyshev coefficients for the Sun, the Earth–Moon barycentre, the

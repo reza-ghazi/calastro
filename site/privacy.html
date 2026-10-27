@@ -29,7 +29,7 @@
 <h1 class="title">CalAstro — Privacy Policy</h1>
 </header>
 <h1 id="calastro--privacy-policy">CalAstro — Privacy Policy</h1>
-<p><em>Last updated: October 26, 2026</em></p>
+<p><em>Last updated: October 27, 2026</em></p>
 <p>CalAstro is a Chrome extension for astronomical calendar conversion,
 Sun and Moon times, and prayer times. This policy explains what data the
 extension handles and where it goes.</p>
@@ -37,13 +37,15 @@ extension handles and where it goes.</p>
 <ul>
 <li>CalAstro has <strong>no server, no account, no analytics and no
 advertising</strong>. The publisher receives no data from you.</li>
-<li>All calculations run <strong>on your device</strong>, from data
-packaged with the extension.</li>
+<li>All calculations run <strong>on your device</strong>.</li>
+<li>On first use, CalAstro downloads its astronomical data (about 223
+MB, once) from the project's public website. Nothing about you is
+sent.</li>
 <li>The location you choose and your settings are stored <strong>only in
 your browser</strong>.</li>
-<li>The extension contacts the network only if you turn on <strong>data
-updates</strong>. It then downloads two public scientific files and
-sends nothing about you.</li>
+<li>Apart from that one-time download, the extension contacts the
+network only if you turn on <strong>data updates</strong>. It then
+downloads two public scientific files and sends nothing about you.</li>
 </ul>
 <h2 id="data-the-extension-handles">Data the extension handles</h2>
 <table>
@@ -72,6 +74,13 @@ saved places)</td>
 <td>No one</td>
 </tr>
 <tr>
+<td>Astronomical data downloaded once on first use (JPL ephemeris
+files)</td>
+<td>Sun, Moon and calendar calculations</td>
+<td>Extension storage (Cache Storage) on your device</td>
+<td>No one</td>
+</tr>
+<tr>
 <td>Downloaded Earth-orientation and leap-second data (only if updates
 are on)</td>
 <td>Keep time calculations current</td>
@@ -89,6 +98,23 @@ browser and is never sent anywhere. You can instead pick a city or type
 coordinates.</p>
 <p>CalAstro has no access to your browsing, tabs, page contents,
 history, cookies or passwords, and it runs no content scripts.</p>
+<h2 id="one-time-astronomical-data-download">One-time astronomical data
+download</h2>
+<p>The Sun and Moon calculations use NASA JPL's DE442 and DE441
+ephemerides. To keep the extension small, these public data files (about
+223 MB) are not inside the extension package. When CalAstro is first
+installed it downloads them once from the project's website,
+<code>https://reza-ghazi.github.io/calastro/data/ephemeris/</code>,
+which is hosted by GitHub Pages. Each file is checked against a SHA-256
+checksum packaged with the extension before it is used, and the files
+are kept on your device across updates, so they are not downloaded
+again.</p>
+<p>These are plain downloads of fixed public files, made without cookies
+or credentials. As with any web request, GitHub, which hosts the
+website, sees your IP address and the files requested. Nothing else is
+sent, and the publisher does not receive this information. Until the
+download finishes, the Gregorian, Julian and tabular Islamic calendars
+already work.</p>
 <h2 id="data-updates-optional-off-until-you-turn-them-on">Data updates
 (optional, off until you turn them on)</h2>
 <p>When you choose <strong>Enable automatic updates</strong> in
@@ -104,8 +130,8 @@ the official leap-second list.</li>
 <p>These are plain downloads of public files, made without cookies or
 credentials. As with any web request, those servers see your IP address.
 Nothing else is sent. Downloaded files are checked for validity before
-use, and you can turn updates off at any time; the data bundled with the
-extension is then used.</p>
+use, and you can turn updates off at any time; the data packaged with
+the extension is then used.</p>
 <h2 id="retention-and-deletion">Retention and deletion</h2>
 <p>Your data stays in your browser until you change it. Uninstalling the
 extension deletes all of its stored data. Settings backups you download

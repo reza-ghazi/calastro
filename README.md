@@ -4,7 +4,8 @@
 
 CalAstro is a free Chrome extension that converts dates between calendars and shows the day's
 Sun and Moon events and prayer times for any place. Every calculation runs on your device,
-from the original JPL DE442 and DE441 ephemerides packaged with the extension.
+from the original JPL DE442 and DE441 ephemerides. The extension downloads them once on first
+use (about 223 MB, checked against SHA-256 checksums) and then works offline.
 
 > Chrome Web Store: _link added at publication_ · Website: https://reza-ghazi.github.io/calastro/
 

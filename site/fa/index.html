@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalAstro — تقویم نجومی برای کروم</title>
+  <meta name="description" content="افزونهٔ رایگان کروم: تبدیل تاریخ (میلادی، ژولینی، هجری خورشیدی نجومی، قمری)، زمان‌های خورشید و ماه، اهلهٔ ماه و اوقات شرعی، محاسبه‌شده به‌صورت آفلاین از زیج JPL DE442.">
+  <link rel="icon" href="../img/icon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="en" href="../">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <img src="../img/icon.svg" alt="">
+      <div>
+        <nav class="top" aria-label="سایت"><a href="#features">امکانات</a><a href="#accuracy">دقت</a><a href="../privacy.html">حریم خصوصی (انگلیسی)</a><a href="https://github.com/reza-ghazi/calastro">گیت‌هاب</a><a href="../" hreflang="en" lang="en">English</a></nav>
+        <h1>CalAstro</h1>
+        <p>تقویم نجومی، زمان‌های خورشید و ماه و اوقات شرعی — در مرورگر شما، آفلاین و رایگان.</p>
+        <a class="cta" href="https://github.com/reza-ghazi/calastro">به‌زودی در فروشگاه افزونه‌های کروم</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="features" class="wrap">
+      <h2>امکانات</h2>
+      <div class="grid">
+        <div class="card"><h3>تبدیل تاریخ</h3><p>میلادی، ژولینی، هجری خورشیدی نجومی (بر پایهٔ قاعدهٔ رسمی مرکز تقویم دانشگاه تهران)، شاهنشاهی، قمری جدولی و قمری پیش‌بینی‌شده (قاعدهٔ ام‌القری یا معیارهای رؤیت هلال یالوپ و عوده).</p></div>
+        <div class="card"><h3>خورشید و ماه</h3><p>طلوع، غروب و گذر از نصف‌النهار؛ فلق و شفق مدنی، دریایی و نجومی برای روز محلی، از جمله روز و شب قطبی.</p></div>
+        <div class="card"><h3>اهلهٔ ماه</h3><p>درصد روشنایی، زاویهٔ فاز، افزایشی یا کاهشی، نام اهله و سن ماه از آخرین ماه نو.</p></div>
+        <div class="card"><h3>اوقات شرعی</h3><p>۱۸ روش محاسبه با ذکر منبع، از جمله روش مؤسسهٔ ژئوفیزیک دانشگاه تهران؛ مذهب عصر، قاعدهٔ عرض‌های بالا، جدول رمضان و سمت قبله بر بیضی‌گون WGS84.</p></div>
+        <div class="card"><h3>فارسی و انگلیسی</h3><p>چیدمان راست‌به‌چپ، ارقام فارسی یا لاتین، پوستهٔ روشن و تیره، سازگار با صفحه‌کلید و صفحه‌خوان.</p></div>
+        <div class="card"><h3>خصوصی و آفلاین</h3><p>بدون حساب کاربری، بدون آمارگیری و بدون سرور. همهٔ محاسبات روی دستگاه شما و از زیج JPL DE442 همراه افزونه انجام می‌شود.</p></div>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="grid">
+        <figure><img src="../img/5-today-fa.png" alt="نمای امروز به زبان فارسی" loading="lazy" width="1280" height="800"><figcaption>نمای امروز</figcaption></figure>
+        <figure><img src="../img/2-convert-en.png" alt="تبدیل ۱ فروردین ۱۴۰۵ به همهٔ تقویم‌ها" loading="lazy" width="1280" height="800"><figcaption>تبدیل تاریخ</figcaption></figure>
+      </div>
+    </section>
+    <section id="accuracy" class="wrap">
+      <h2>دقتی که می‌توانید بسنجید</h2>
+      <table>
+        <thead><tr><th>کمیت</th><th>مرجع مستقل</th><th>هم‌خوانی</th></tr></thead>
+        <tbody>
+          <tr><td>موقعیت خورشید و ماه (۱۰۰۰ لحظه، ۴ مکان)</td><td>SPICE ناسا با مدل زمین ITRF93</td><td>۰٫۰۰۹ ثانیهٔ قوسی</td></tr>
+          <tr><td>طلوع، غروب، گذر و گرگ‌ومیش (۱۲۶ رویداد)</td><td>رصدخانهٔ نیروی دریایی آمریکا (USNO)</td><td>در همهٔ موارد همان دقیقه</td></tr>
+          <tr><td>آغاز سال‌های هجری خورشیدی ۱۲۰۶ تا ۱۴۹۸</td><td>مرکز تقویم دانشگاه تهران</td><td>۲۹۳ سال از ۲۹۳ سال</td></tr>
+          <tr><td>ماه‌های ام‌القری ۱۴۲۳ تا ۱۴۵۰</td><td>جدول رسمی KACST</td><td>۳۳۵ ماه از ۳۳۶ ماه</td></tr>
+        </tbody>
+      </table>
+      <p class="note">زمان‌ها به دقیقه گرد می‌شوند؛ شکست واقعی جو می‌تواند طلوع و غروب را بیش از این تغییر دهد. تاریخ‌های قمری محاسبه‌شده و پیش‌بینی رؤیت هلال، محاسبه‌اند و نه اعلام رسمی.</p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p><a href="../privacy.html">سیاست حریم خصوصی</a> · <a href="https://github.com/reza-ghazi/calastro/blob/main/SUPPORT.md">پشتیبانی</a> · contact@brightarcadia.com</p>
+      <p>زیج: NASA JPL DE442 · جهت‌یابی زمین: IERS · داده‌های مکان © GeoNames (CC BY 4.0) · © ۲۰۲۶ Reza K Ghazi</p>
+    </div>
+  </footer>
+</body>
+</html>

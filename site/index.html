@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CalAstro — Astronomical calendar for Chrome</title>
+  <meta name="description" content="Free Chrome extension: calendar conversion (Gregorian, Julian, astronomical Solar Hijri, Islamic), Sun and Moon times, Moon phase and prayer times, computed offline from JPL DE442.">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
+  <link rel="alternate" hreflang="fa" href="fa/">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <img src="img/icon.svg" alt="">
+      <div>
+        <nav class="top" aria-label="Site"><a href="#features">Features</a><a href="#accuracy">Accuracy</a><a href="privacy.html">Privacy</a><a href="https://github.com/reza-ghazi/calastro">GitHub</a><a href="fa/" hreflang="fa" lang="fa">فارسی</a></nav>
+        <h1>CalAstro</h1>
+        <p>Astronomical calendar, Sun and Moon times, and prayer times — in your browser, offline, free.</p>
+        <a class="cta" id="install" href="https://github.com/reza-ghazi/calastro">Coming soon to the Chrome Web Store</a>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="features" class="wrap">
+      <h2>What CalAstro does</h2>
+      <div class="grid">
+        <div class="card"><h3>Calendar conversion</h3><p>Gregorian, Julian, astronomical Solar Hijri (official Calendar Center rule), Shahanshahi, tabular Islamic, and predicted Islamic (Umm al-Qura rule, or Yallop or Odeh crescent visibility).</p></div>
+        <div class="card"><h3>Sun and Moon</h3><p>Rise, set and meridian transit; civil, nautical and astronomical twilight for your local day, including polar day and night.</p></div>
+        <div class="card"><h3>Moon phase</h3><p>Illumination, phase angle, waxing or waning, named phase and lunar age since the last new moon.</p></div>
+        <div class="card"><h3>Prayer times</h3><p>18 calculation methods with their sources shown, Asr schools, high-latitude rules, Ramadan timetables and the Qibla bearing on the WGS84 ellipsoid.</p></div>
+        <div class="card"><h3>English and Persian</h3><p>Right-to-left layout, Persian or Latin numerals, light and dark themes, keyboard and screen-reader friendly.</p></div>
+        <div class="card"><h3>Private and offline</h3><p>No account, no analytics, no server. Calculations run on your device from the packaged JPL DE442 ephemeris.</p></div>
+      </div>
+    </section>
+    <section class="wrap">
+      <div class="grid">
+        <figure><img src="img/1-today-en.png" alt="Today view: dates in several calendars, Sun and Moon events, Moon phase" loading="lazy" width="1280" height="800"><figcaption>Today</figcaption></figure>
+        <figure><img src="img/2-convert-en.png" alt="Converting 1 Farvardin 1405 to all calendars" loading="lazy" width="1280" height="800"><figcaption>Convert</figcaption></figure>
+        <figure><img src="img/4-prayer-en.png" alt="Prayer times with method sources and Qibla" loading="lazy" width="1280" height="800"><figcaption>Prayer times</figcaption></figure>
+        <figure><img src="img/5-today-fa.png" alt="Persian interface" loading="lazy" width="1280" height="800"><figcaption>Persian interface</figcaption></figure>
+      </div>
+    </section>
+    <section id="accuracy" class="wrap">
+      <h2>Accuracy you can check</h2>
+      <table>
+        <thead><tr><th>Quantity</th><th>Independent reference</th><th>Agreement</th></tr></thead>
+        <tbody>
+          <tr><td>Sun and Moon positions (1000 epochs, 4 sites)</td><td>NASA NAIF SPICE, ITRF93 Earth model</td><td>0.009″</td></tr>
+          <tr><td>Rise, set, transit, twilight (126 events)</td><td>US Naval Observatory</td><td>same minute in every case</td></tr>
+          <tr><td>Solar Hijri year starts, 1206–1498 SH</td><td>University of Tehran Calendar Center</td><td>293 of 293 years</td></tr>
+          <tr><td>Umm al-Qura months, 1423–1450 AH</td><td>KACST official table</td><td>335 of 336 months</td></tr>
+          <tr><td>Prayer times, İstanbul, 403 days</td><td>Diyanet timetable</td><td>Fajr–Asr within ±1 min</td></tr>
+        </tbody>
+      </table>
+      <p class="note">Displayed times are rounded to the minute; real atmospheric refraction can change sunrise and sunset by more. Calculated Islamic dates and crescent predictions are calculations, not official announcements. <a href="https://github.com/reza-ghazi/calastro/blob/main/docs/methods.md">Methods</a> · <a href="https://github.com/reza-ghazi/calastro/blob/main/docs/validation.md">Validation</a></p>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap">
+      <p><a href="privacy.html">Privacy policy</a> · <a href="https://github.com/reza-ghazi/calastro/blob/main/SUPPORT.md">Support</a> · <a href="https://github.com/reza-ghazi/calastro/blob/main/CHANGELOG.md">Release notes</a> · contact@brightarcadia.com</p>
+      <p>Ephemeris: NASA JPL DE442. Earth orientation: IERS. Place data © GeoNames (CC BY 4.0). © 2026 Reza K Ghazi.</p>
+    </div>
+  </footer>
+</body>
+</html>

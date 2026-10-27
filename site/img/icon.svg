@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b2f7d"/>
+      <stop offset="1" stop-color="#151a40"/>
+    </linearGradient>
+    <mask id="crescent">
+      <rect width="128" height="128" fill="#fff"/>
+      <circle cx="44" cy="82" r="30" fill="#000"/>
+    </mask>
+  </defs>
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="url(#sky)"/>
+  <!-- orbit / calendar ring -->
+  <circle cx="64" cy="64" r="44" fill="none" stroke="#9aa3ff" stroke-opacity=".35" stroke-width="3"/>
+  <!-- sun -->
+  <circle cx="92" cy="36" r="13" fill="#ffc35c"/>
+  <!-- crescent moon: the lit limb faces the Sun -->
+  <circle cx="58" cy="68" r="32" fill="#e7e9f6" mask="url(#crescent)"/>
+  <!-- stars -->
+  <circle cx="30" cy="30" r="2.5" fill="#e7e9f6"/>
+  <circle cx="98" cy="96" r="2" fill="#e7e9f6" fill-opacity=".8"/>
+</svg>

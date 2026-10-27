@@ -1,0 +1,20 @@
+name: Calculation question
+description: A result differs from a timetable, almanac or calendar you trust
+labels: [calculation]
+body:
+  - type: textarea
+    id: result
+    attributes:
+      label: CalAstro's result and the reference value
+    validations:
+      required: true
+  - type: input
+    id: reference
+    attributes:
+      label: Reference source (link or publication)
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Date, place, time zone and method

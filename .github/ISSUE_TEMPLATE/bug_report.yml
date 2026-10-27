@@ -1,0 +1,19 @@
+name: Bug report
+description: Something in CalAstro does not work as expected
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened, and what did you expect?
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: CalAstro version (chrome://extensions)
+  - type: textarea
+    id: context
+    attributes:
+      label: Date, place and settings involved
+      description: For example the calendar, location (a city is enough), time zone and calculation method.

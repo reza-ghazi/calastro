@@ -4,8 +4,9 @@
 
 CalAstro is a free Chrome extension that converts dates between calendars and shows the day's
 Sun and Moon events and prayer times for any place. Every calculation runs on your device,
-from the original JPL DE442 and DE441 ephemerides. The extension downloads them once on first
-use (about 223 MB, checked against SHA-256 checksums) and then works offline.
+from the original JPL DE442 and DE441 ephemerides. The extension downloads them once (about
+223 MB for 1 CE – 3000 CE at first use, and 516 MB more the first time you look up a date
+outside that span; all checked against SHA-256 checksums) and then works offline.
 
 > Chrome Web Store: _link added at publication_ · Website: https://reza-ghazi.github.io/calastro/
 
@@ -20,7 +21,8 @@ use (about 223 MB, checked against SHA-256 checksums) and then works offline.
   - Shahanshahi (Imperial);
   - **tabular Islamic** (four historical leap-year variants, two epochs);
   - **predicted Islamic**: the Umm al-Qura rule, or crescent visibility by the Yallop or Odeh
-    criterion at Makkah or at your location.
+    criterion at Makkah or at your location;
+  - **Hebrew (Jewish)**, the calendar of Hillel II, including years before Anno Mundi (BAM).
 - **Today:** the date in your chosen calendars, the weekday, the time zone and the ΔT in use.
 - **Sun and Moon:** rise, set and meridian transit; civil, nautical and astronomical
   twilight; explicit "up all day" and "down all day" states for polar days and nights.
@@ -51,13 +53,14 @@ announcements**. Displayed times are rounded to the minute. Real atmospheric ref
 change sunrise and sunset by more than that.
 
 ## Supported range
-- **Gregorian, Julian and tabular Islamic:** 999,999 BCE to 999,999 CE, including years before
-  the Hijra (BH). These calendars are arithmetic, so they are proleptic before their historical
-  introduction.
-- **Sun, Moon, prayer times and predicted Islamic months:** 1 CE – 3000 CE. Far from the
-  present, clock times inherit Earth-rotation uncertainty (about ±4 min at 1 CE and ±30 min at
-  3000 CE); CalAstro shows it.
-- **Astronomical Solar Hijri:** 622 BH – 2379 SH (1 CE – 3000 CE).
+- **Gregorian, Julian, tabular Islamic and Hebrew:** 999,999 BCE to 999,999 CE, including years
+  before the Hijra (BH) and before Anno Mundi (BAM). These calendars are arithmetic, so they are
+  proleptic before their historical introduction.
+- **Sun, Moon, prayer times and predicted Islamic months:** 5001 BCE – 5000 CE. Far from the
+  present, clock times inherit Earth-rotation uncertainty (about ±62 min at 5001 BCE, ±4 min at
+  1 CE, ±30 min at 3000 CE and ±3.4 h at 5000 CE); CalAstro shows it, and marks calendar days
+  that it makes uncertain with "±1".
+- **Astronomical Solar Hijri:** 5623 BH – 4379 SH (5001 BCE – 5000 CE).
 
 ## Documentation
 - [User guide](docs/user-guide.md)

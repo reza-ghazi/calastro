@@ -1,18 +1,22 @@
 # Methods
 
-CalAstro computes everything on your device. The JPL ephemeris data (about 223 MB) is downloaded
-once on first use from this project's website and checked against SHA-256 checksums packaged with
-the extension; all other data is packaged.
+CalAstro computes everything on your device. The JPL ephemeris data is downloaded once from this
+project's website and checked against SHA-256 checksums packaged with the extension: about 223 MB
+(1 CE – 3000 CE) at first use, and 516 MB more (5001 BCE – 1 CE, 3000 – 5000 CE) the first time a
+date there is asked for. All other data is packaged.
 
 ## Ephemeris and reference frames
 - **Positions:** original Chebyshev coefficients for the Sun, the Earth–Moon barycentre, the
   Moon and the Earth.
   - JPL DE442 from 1549-12-31 to 2650-01-25; JPL DE441 for other years.
-  - The bundled data spans about 10 BCE – 3007 CE; the features cover 1 CE – 3000 CE.
+  - The data spans about 5011 BCE – 5004 CE; the features cover 5001 BCE – 5000 CE.
   - At the two hand-overs the Moon steps by at most 0.38″ (DE441 vs DE442).
+- **Precession:** IAU 2006 within 1000–3000 CE; outside, the long-term precession of Vondrák,
+  Capitaine & Wallace (2011), valid for ±200,000 years (IAU 2006 would be 43″ off at 5001 BCE).
 - **Far-from-present dates:** positions stay accurate (DE441), but local clock times inherit
-  the uncertainty of Earth's rotation (ΔT), about ±4 min at 1 CE and ±30 min at 3000 CE (1σ).
-  CalAstro shows a note when this exceeds a minute.
+  the uncertainty of Earth's rotation (ΔT): about ±62 min at 5001 BCE, ±4 min at 1 CE, ±30 min
+  at 3000 CE and ±3.4 h at 5000 CE (1σ). CalAstro shows a note when this exceeds a minute, and
+  marks Solar Hijri and Islamic days whose start it makes uncertain with "±1".
 - **Apparent places:**
   - light time;
   - solar gravitational light deflection (not applied to the Sun itself);
@@ -70,6 +74,11 @@ the extension; all other data is packaged.
   Thursday (astronomical) epoch of 1 Muharram AH 1.
   - Years before AH 1 are counted BH (before Hijra), proleptically.
   - Days are counted from midnight; the religious day begins at sunset.
+- **Hebrew (Jewish):** the arithmetic calendar of Hillel II: the 19-year cycle (7 leap years with
+  Adar I and Adar II), the molad of Tishri and the four postponements (dehiyyot).
+  - 1 Tishri AM 1 is Monday 7 October 3761 BCE (Julian). Years before it are counted BAM (before
+    Anno Mundi), proleptically, with no year zero; dates before AM 4119 (359 CE) are proleptic.
+  - Days are counted from midnight; the Jewish day begins at sunset.
 - **Predicted Islamic:**
   - **Umm al-Qura rule (default):** at Makkah on the 29th, if the conjunction precedes sunset
     and the Moon sets after the Sun, the next day begins the month.

@@ -29,7 +29,7 @@
 <h1 class="title">CalAstro — Privacy Policy</h1>
 </header>
 <h1 id="calastro--privacy-policy">CalAstro — Privacy Policy</h1>
-<p><em>Last updated: October 27, 2026</em></p>
+<p><em>Last updated: October 28, 2026</em></p>
 <p>CalAstro is a Chrome extension for astronomical calendar conversion,
 Sun and Moon times, and prayer times. This policy explains what data the
 extension handles and where it goes.</p>
@@ -39,11 +39,12 @@ extension handles and where it goes.</p>
 advertising</strong>. The publisher receives no data from you.</li>
 <li>All calculations run <strong>on your device</strong>.</li>
 <li>On first use, CalAstro downloads its astronomical data (about 223
-MB, once) from the project's public website. Nothing about you is
-sent.</li>
+MB, once) from the project's public website. If you look up a date
+before 1 CE or after 3000 CE, it downloads the data for those years too
+(about 516 MB, once). Nothing about you is sent.</li>
 <li>The location you choose and your settings are stored <strong>only in
 your browser</strong>.</li>
-<li>Apart from that one-time download, the extension contacts the
+<li>Apart from these one-time downloads, the extension contacts the
 network only if you turn on <strong>data updates</strong>. It then
 downloads two public scientific files and sends nothing about you.</li>
 </ul>
@@ -74,8 +75,7 @@ saved places)</td>
 <td>No one</td>
 </tr>
 <tr>
-<td>Astronomical data downloaded once on first use (JPL ephemeris
-files)</td>
+<td>Astronomical data downloaded once (JPL ephemeris files)</td>
 <td>Sun, Moon and calendar calculations</td>
 <td>Extension storage (Cache Storage) on your device</td>
 <td>No one</td>
@@ -101,14 +101,20 @@ history, cookies or passwords, and it runs no content scripts.</p>
 <h2 id="one-time-astronomical-data-download">One-time astronomical data
 download</h2>
 <p>The Sun and Moon calculations use NASA JPL's DE442 and DE441
-ephemerides. To keep the extension small, these public data files (about
-223 MB) are not inside the extension package. When CalAstro is first
-installed it downloads them once from the project's website,
+ephemerides. To keep the extension small, these public data files are
+not inside the extension package. CalAstro downloads them from the
+project's website,
 <code>https://reza-ghazi.github.io/calastro/data/ephemeris/</code>,
-which is hosted by GitHub Pages. Each file is checked against a SHA-256
-checksum packaged with the extension before it is used, and the files
-are kept on your device across updates, so they are not downloaded
-again.</p>
+which is hosted by GitHub Pages:</p>
+<ul>
+<li>when CalAstro is first installed, the data for 1 CE – 3000 CE (about
+223 MB);</li>
+<li>the first time you ask for a date before 1 CE or after 3000 CE, the
+data for 5001 BCE – 1 CE and 3000 – 5000 CE (about 516 MB).</li>
+</ul>
+<p>Each file is checked against a SHA-256 checksum packaged with the
+extension before it is used, and the files are kept on your device
+across updates, so they are not downloaded again.</p>
 <p>These are plain downloads of fixed public files, made without cookies
 or credentials. As with any web request, GitHub, which hosts the
 website, sees your IP address and the files requested. Nothing else is

@@ -5,8 +5,9 @@
    - today's date in your chosen calendars;
    - the Sun's times and the next event;
    - the Moon's phase.
-   On first use, CalAstro downloads its astronomical data once (about 223 MB) and shows the
-   progress. Gregorian, Julian and tabular Islamic dates work at once; Sun, Moon and the
+   On first use, CalAstro downloads its astronomical data once (about 223 MB, for 1 CE – 3000 CE)
+   and shows the progress. The first time you look up a date before 1 CE or after 3000 CE, it
+   downloads the data for 5001 BCE – 5000 CE (about 516 MB more), also once. Gregorian, Julian and tabular Islamic dates work at once; Sun, Moon and the
    astronomical calendars appear when the download finishes. After that, CalAstro works offline.
 2. Click **Open CalAstro** for the full page. It has five tabs: **Today**, **Convert**,
    **Sun & Moon**, **Prayer times** and **Settings & methods**.
@@ -18,8 +19,8 @@
 ## Converting dates
 On **Convert**:
 1. Choose the calendar you are converting from.
-2. Enter the day, month and year. For Gregorian, Julian and tabular Islamic, choose the era:
-   CE or BCE, AH or BH. Years are counted as in the calendars themselves, with no year zero: 1 BCE is
+2. Enter the day, month and year. For Gregorian, Julian, tabular Islamic and Hebrew, choose the
+   era: CE or BCE, AH or BH, AM or BAM. Hebrew leap years list Adar I and Adar II. Years are counted as in the calendars themselves, with no year zero: 1 BCE is
    followed by 1 CE, and 1 BH by 1 AH.
 3. Press **Convert**. **Today** resets the form to today's date in the selected calendar.
 

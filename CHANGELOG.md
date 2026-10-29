@@ -16,6 +16,9 @@ First public release.
 - Convert has a **Today** button that resets the form to today's date.
 - Every date shows its weekday in the calendar's own names (e.g. Yekshanbeh for Solar Hijri,
   al-Ahad for Islamic); years are calendrical, with no year zero (1 BCE is followed by 1 CE).
-- JPL DE442/DE441 ephemeris for 1 CE – 3000 CE, downloaded once on first use (about 223 MB,
-  checksum-verified), then everything works offline. Optional updates of Earth-orientation
+- Hebrew (Jewish) calendar, with years before Anno Mundi (BAM).
+- Sun, Moon, prayer times and the astronomical calendars from 5001 BCE to 5000 CE (JPL DE442 and
+  DE441, long-term precession of Vondrák et al. outside 1000–3000 CE). The data for 1 CE – 3000 CE
+  (about 223 MB) is downloaded on first use, the rest (about 516 MB) only when a date there is
+  asked for; all checksum-verified, then everything works offline. Optional updates of Earth-orientation
   and leap-second data.
